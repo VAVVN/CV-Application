@@ -1,0 +1,91 @@
+/* Styles for the Education component */
+.education {
+  max-width: 560px;
+  margin: 16px 0;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #e6e6e9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(18, 26, 32, 0.04);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+.education h2 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.education label {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.education input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 6px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  color: #111827;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  transition: border-color 120ms ease, box-shadow 120ms ease, background 120ms;
+}
+
+.education input::placeholder {
+  color: #9ca3af;
+}
+
+.education input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.09), 0 0 0 4px rgba(37, 99, 235, 0.08);
+  background: #fff;
+}
+
+.education button {
+  /* size and spacing */
+  width: 100px;
+  margin: 12px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  color: #fff;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+
+.education button:hover {
+  background: #1d4ed8;
+}
+
+/* Slight spacing fix for the last input */
+.education input:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .general-info {
+    padding: 14px;
+    border-radius: 8px;
+  }
+
+  .general-info h2 {
+    font-size: 1.05rem;
+  }
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .general-info input {
+    transition: none;
+  }
+}
